@@ -1645,6 +1645,9 @@ form#contactForm select::placeholder {
 #author {
   padding: 150px 0px;
 }
+#author>.container{
+  background-color: rgba(0, 0, 0, 0.05);
+}
 form#contactForm textarea {
   width: 100%;
   min-width: 100%;
