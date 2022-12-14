@@ -624,13 +624,13 @@ function contact() {
     });
   });
   mainButton.addEventListener("click", () => {
-    let nameVal = /^([A-Z]([a-z]){2,18}\s)+([A-Z]([a-z]){2,18})$/;
+    let nameVal = /^([A-ZČĆŽĐŠ]([a-zčćžđš]){2,18}\s)+([A-ZČĆŽĐŠ]([a-zčćžđš]){2,18})$/;
     let emailVal = /^([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}$/;
     let numberVal = /^06([0-9]){7,8}$/;
     let brGresaka = 0;
     if (!nameVal.test(form.name.value)) {
       form.name.nextElementSibling.innerHTML =
-        "Loše upisano ime, primer: Uros Vladimirov";
+        "Loše upisano ime, primer: Uroš Vladimirov";
       brGresaka++;
       form.name.classList.add("border-danger");
     } else {
@@ -671,7 +671,7 @@ function contact() {
       form.test[0].parentElement.nextElementSibling.innerHTML = "";
     }
     if (form.message.value.length < 10) {
-      form.message.nextElementSibling.innerHTML = "NIste uneli poruku";
+      form.message.nextElementSibling.innerHTML = "Niste uneli poruku";
       brGresaka++;
       form.message.classList.add("border-danger");
     } else {
