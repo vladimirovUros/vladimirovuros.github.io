@@ -103,7 +103,7 @@ function features() {
 
   let percent = [
     ["80", "60", "90", "70"],
-    ["HTML/CSS/JS", "WordPress", "Marketing", "Photoshop"],
+    ["Uspešnost", "Upornost", "Marketing", "Ideja"],
   ];
 
   let pInner = ``;
