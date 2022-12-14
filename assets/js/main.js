@@ -670,8 +670,8 @@ function contact() {
     } else {
       form.test[0].parentElement.nextElementSibling.innerHTML = "";
     }
-    if (form.message.value.length < 10) {
-      form.message.nextElementSibling.innerHTML = "Niste uneli poruku";
+    if (form.message.value.length < 8) {
+      form.message.nextElementSibling.innerHTML = "Niste uneli poruku, (minimum 8)";
       brGresaka++;
       form.message.classList.add("border-danger");
     } else {
